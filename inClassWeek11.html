@@ -20,14 +20,19 @@
 		// All of the steps below must be achieved using JavaScript!
 
 		// 1. Change the h1 element to your name.
+        document.querySelector("h1").innerHTML = "Helena";
 
 		// 2. Update the three span elements using ONLY JavaScript
-
+        document.getElementById("URL").innerHTML = "https://littlerabish.github.io/539discussion11/inClassWeek11.html";
+        document.getElementById("items").innerHTML = document.querySelectorAll("li").length;
+        document.getElementById("time").innerHTML = new Date();
     }
 
 	function stylePage () {
 
 		// 3. Change the background color and margin for the entire page.
+        document.body.style.background = "lightgray";
+        document.body.style.margin = "20px";
 
 	}
 
