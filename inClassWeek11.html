@@ -38,8 +38,16 @@
 
     // 4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  
     //    Each occurence should be on a separate line.  Don't use paragraphs. 
+    let cnt = 0;
 	function copyFunction(){
-
+        document.querySelector("#cheer").innerHTML += "Go Blue" + "<br>";
+        if (cnt % 2 == 0){
+            document.querySelector("#cheer").style.color = "blue";
+        }
+        else{
+            document.querySelector("#cheer").style.color = "yellow";
+        }
+        cnt++;
 	}
 
 	
